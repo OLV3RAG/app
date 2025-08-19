@@ -3,4 +3,3 @@
 echo "La librería sharedlibrary cargada correctamente"
 
 pipeline()
-
