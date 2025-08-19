@@ -17,14 +17,6 @@ pipeline {
                     // sh 'python setup.py build' // para Python
                 }
             }
+}
 
-        post {
-            success {
-                echo '✅ Pipeline completado con éxito.'
-            }
-            failure {
-                echo '❌ El pipeline falló.'
-            }
-        }
-    }
 }
