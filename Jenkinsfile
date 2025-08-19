@@ -1,3 +1,3 @@
-@Library('sharedlibrary@main') _  // Aquí llamas a tu librería compartida
+@Library('sharedlibrary@main') _ 
 
 pipeline name: "JavaApp"
