@@ -20,7 +20,6 @@ pipeline {
             steps {
                 echo '🔨 Compilando la aplicación...'
                 // Cambia esto por el comando real para tu app
-                sh 'npm install' // para Node.js
                 // sh './gradlew build' // para Java/Gradle
                 // sh 'python setup.py build' // para Python
             }
@@ -30,7 +29,6 @@ pipeline {
             steps {
                 echo '🧪 Ejecutando pruebas...'
                 // Cambia esto por tu sistema de testing
-                sh 'npm test'
                 // sh './gradlew test'
                 // sh 'pytest'
             }
@@ -43,12 +41,6 @@ pipeline {
             steps {
                 echo '🚀 Desplegando la aplicación...'
                 // Simulación de deploy
-                sh '''
-                echo "Copiando archivos..."
-                mkdir -p $DEPLOY_DIR
-                cp -r * $DEPLOY_DIR
-                echo "Despliegue completado en $DEPLOY_DIR"
-                '''
             }
         }
     }
