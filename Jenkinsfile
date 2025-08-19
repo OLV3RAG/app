@@ -3,19 +3,18 @@
 pipeline {
         agent any
 
-        options {
-            timeout(time: 10, unit: 'MINUTES')
-        }
+    options {
+        timeout(time: 10, unit: 'MINUTES')
+    }
 
-        stages {
-            stage('Build from library') {
-                steps {
-                    script {
-                       echo '🔨 Compilando la aplicación...'
-                    pipeline.call() 
-                    }
+    stages {
+        stage('Build from library') {
+            steps {
+                script {
+                    echo '🔨 Compilando la aplicación...'
+                    pipelineFlow.call() 
                 }
             }
-}
-
+        }
+    }
 }
