@@ -1,3 +1,3 @@
-@Library('sharedlibrary@main')_ 
+@Library('testpipeline@main') _ 
 
 pipeline()
