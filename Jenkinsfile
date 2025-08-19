@@ -1,3 +1,4 @@
 @Library('sharedlibrary@main') _ 
 
-pipeline name: "JavaApp"
+pipeline name: "JavaApp",
+         node: "any"
