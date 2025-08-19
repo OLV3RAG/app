@@ -1,3 +1,3 @@
 @Library('testpipeline@main') _ 
 
-pipeline()
+pipeline
