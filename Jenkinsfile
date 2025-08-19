@@ -1,5 +1,3 @@
-@Library('sharedlibrary@main') _
+@Library('sharedlibrary@main') _  // Aquí llamas a tu librería compartida
 
-echo "La librería sharedlibrary cargada correctamente"
-
-pipeline()
+pipeline()  // Llama al método call() de vars/pipeline.groovy
